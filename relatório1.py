@@ -15,9 +15,8 @@ class Animal:
     def emitir_som(self):
         return f"Som do animal: {self.som}"
 
-
 class Elefante(Animal):
-    def __int__(self, nome, idade, especie, cor, som, tamanho):
+    def __init__(self, nome, idade, especie, cor, som, tamanho):
         super().__init__(nome, idade, especie, cor, som)
         self.tamanho = tamanho
 
@@ -31,7 +30,7 @@ class Elefante(Animal):
 print("Agora vamos criar o seu elefante")
 
 nome_elefante = input("Digite o nome do seu elefante: ")
-idade_elefante = input("Digite a idade do seu elefante: ")
+idade_elefante = int(input("Digite a idade do seu elefante: "))
 especie_elefante = input("Digite a especie do seu elefante: ")
 cor_elefante = input("Digite a cor do seu elefante: ")
 tamanho_elefante = input("Digite o tamanho do seu elefante: ")
@@ -48,7 +47,7 @@ else:
 
 elefante = Elefante(nome_elefante, idade_elefante, especie_elefante, cor_elefante, som_elefante, tamanho_elefante)
 
-print("Características do Elefante: " + elefante.nome + ", " + elefante.idade + ", " + elefante.especie
+print("Características do Elefante: " + elefante.nome + ", " + str(elefante.idade) + ", " + elefante.especie
       + ", " + elefante.cor + ", " + elefante.tamanho + ", " + elefante.som)
 
 
