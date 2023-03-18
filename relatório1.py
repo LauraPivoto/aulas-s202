@@ -47,7 +47,6 @@ else:
 
 elefante = Elefante(nome_elefante, idade_elefante, especie_elefante, cor_elefante, som_elefante, tamanho_elefante)
 
-print("Características do Elefante: " + elefante.nome + ", " + str(elefante.idade) + ", " + elefante.especie
-      + ", " + elefante.cor + ", " + elefante.tamanho + ", " + elefante.som)
+print(elefante)
 
 
