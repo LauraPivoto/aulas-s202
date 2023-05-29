@@ -14,7 +14,3 @@ class Database:
             for record in results:
                 data.append(record)
             return data
-        
-    def drop_all(self):
-        with self.driver.session() as session:
-            session.run("MATCH (n) DETACH DELETE n")    
